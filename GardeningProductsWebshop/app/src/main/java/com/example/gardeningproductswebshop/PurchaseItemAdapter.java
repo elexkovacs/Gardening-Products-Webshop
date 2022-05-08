@@ -90,7 +90,7 @@ public class PurchaseItemAdapter extends RecyclerView.Adapter<PurchaseItemAdapte
             // Load the images into the ImageView using the Glide library.
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
             //itemView.findViewById(R.id.add_to_cart).setOnClickListener(view -> ((ShoppingActivity)mContext).updateAlertIcon(currentItem));
-            itemView.findViewById(R.id.deletePurchase).setOnClickListener(view -> ((ShoppingActivity)mContext).deleteItem(currentItem));
+            //itemView.findViewById(R.id.delete).setOnClickListener(view -> ((CartActivity)mContext).deleteItem(currentItem));
         }
     }
 }

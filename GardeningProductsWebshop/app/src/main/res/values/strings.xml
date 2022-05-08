@@ -15,50 +15,83 @@
     <string name="to_cart">Kosárba</string>
     <string name="delete">Törlés</string>
 
-    <string-array name="phone_labels">
-        <item>Otthon</item>
-        <item>Munkahely</item>
-        <item>Mobil</item>
-        <item>Egyéb</item>
-    </string-array>
 
     <string-array name="shopping_item_names">
-        <item>Smart Phone</item>
-        <item>Tablet</item>
-        <item>Gaming PC</item>
-        <item>Oled TV</item>
-        <item>Kerékpár</item>
-        <item>Lego</item>
-        <item>Jelmez</item>
-        <item>Sport eszközök</item>
-        <item>Konyhai eszközök</item>
-        <item>Bútor</item>
+        <item>Ásó</item>
+        <item>Kapa</item>
+        <item>Gereblye</item>
+        <item>Fűnyíró</item>
+        <item>Talicska</item>
+        <item>Metszőolló</item>
+        <item>Locsoló</item>
+        <item>Permetező</item>
+        <item>Slag</item>
+        <item>Kuka</item>
+
+        <item>Árvácska</item>
+        <item>Cserép</item>
+        <item>Fűkasza</item>
+        <item>Fűmag</item>
+        <item>Kesztyű</item>
+        <item>Láda</item>
+        <item>Lapát</item>
+        <item>Locsolófej</item>
+        <item>Muskátli</item>
+        <item>Sövényvágó</item>
+        <item>Szer</item>
+        <item>Virágföld</item>
     </string-array>
 
     <string-array name="shopping_item_desc">
-        <item>Ez egy okos telefon!</item>
-        <item>Ez egy tablet!</item>
-        <item>Ez egy gamer pc!</item>
-        <item>Ez egy OLED TV!</item>
-        <item>Ez egy kerékpár!</item>
-        <item>Ez egy lego!</item>
-        <item>Ez egy jelmez!</item>
-        <item>Ezek sport eszközök!</item>
-        <item>Ezek konyhai eszküzök!</item>
-        <item>Ez egy bútor!</item>
+        <item>Ez egy ásó!</item>
+        <item>Ez egy kapa!</item>
+        <item>Ez egy gereblye!</item>
+        <item>Ez egy fűnyíró!</item>
+        <item>Ez egy talicska!</item>
+        <item>Ez egy metszőolló!</item>
+        <item>Ez egy locsoló!</item>
+        <item>Ez egy permetező!</item>
+        <item>Ez egy slag!</item>
+        <item>Ez egy kuka!</item>
+
+        <item>Ez egy árvácska!</item>
+        <item>Ez egy cserép!</item>
+        <item>Ez egy fűkasza!</item>
+        <item>Ez egy fűmag!</item>
+        <item>Ez egy kesztyű!</item>
+        <item>Ez egy láda!</item>
+        <item>Ez egy lapát!</item>
+        <item>Ez egy locsolófej!</item>
+        <item>Ez egy muskátli!</item>
+        <item>Ez egy sövényvágó!</item>
+        <item>Ez egy szer!</item>
+        <item>Ez egy virágölf!</item>
+
     </string-array>
 
     <array name="shopping_item_rates">
-        <item>3.5</item>
-        <item>5</item>
-        <item>4</item>
+        <item>1</item>
         <item>1.5</item>
-        <item>5</item>
-        <item>3</item>
-        <item>4.5</item>
-        <item>4</item>
-        <item>5</item>
+        <item>2</item>
         <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>3</item>
+        <item>2.5</item>
+        <item>2</item>
+        <item>1.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>3</item>
+        <item>2.5</item>
+        <item>2</item>
+        <item>1.5</item>
+        <item>3.5</item>
+        <item>3</item>
     </array>
 
     <array name="shopping_item_images">
@@ -72,18 +105,43 @@
         <item>@drawable/permetezo</item>
         <item>@drawable/slag</item>
         <item>@drawable/kuka</item>
+
+        <item>@drawable/arvacska</item>
+        <item>@drawable/cserep</item>
+        <item>@drawable/fukasza</item>
+        <item>@drawable/fumag</item>
+        <item>@drawable/kesztyu</item>
+        <item>@drawable/lada</item>
+        <item>@drawable/lapat</item>
+        <item>@drawable/locsolofej</item>
+        <item>@drawable/muskatli</item>
+        <item>@drawable/sovenyvago</item>
+        <item>@drawable/szer</item>
+        <item>@drawable/viragfold</item>
     </array>
 
     <array name="shopping_item_price">
-        <item>100 Dv</item>
-        <item>150 Dv</item>
-        <item>500 Dv</item>
-        <item>300 Dv</item>
-        <item>180 Dv</item>
-        <item>70 Dv</item>
-        <item>20 Dv</item>
-        <item>30 Dv</item>
-        <item>15 Dv</item>
-        <item>90 Dv</item>
+        <item>15 Ec</item>
+        <item>20 Ec</item>
+        <item>25 Ec</item>
+        <item>30 Ec</item>
+        <item>50 Ec</item>
+        <item>60 Ec</item>
+        <item>30 Ec</item>
+        <item>20 Ec</item>
+        <item>65 Ec</item>
+        <item>45 Ec</item>
+        <item>15 Ec</item>
+        <item>20 Ec</item>
+        <item>25 Ec</item>
+        <item>30 Ec</item>
+        <item>50 Ec</item>
+        <item>60 Ec</item>
+        <item>30 Ec</item>
+        <item>20 Ec</item>
+        <item>65 Ec</item>
+        <item>45 Ec</item>
+        <item>65 Ec</item>
+        <item>45 Ec</item>
     </array>
 </resources>

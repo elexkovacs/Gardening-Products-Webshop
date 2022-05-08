@@ -58,7 +58,7 @@ public class ShoppingActivity extends AppCompatActivity implements SensorEventLi
     private TextView countTextView;
     public static int cartItems = 0;
     private int gridNumber = 1;
-    private Integer itemLimit = 15;
+    private Integer itemLimit = 30;
     boolean isRunning = false;
     MediaPlayer mp;
 
@@ -146,11 +146,11 @@ public class ShoppingActivity extends AppCompatActivity implements SensorEventLi
 
             switch (intentAction) {
                 case Intent.ACTION_POWER_CONNECTED:
-                    itemLimit = 10;
+                    itemLimit = 30;
                     queryData();
                     break;
                 case Intent.ACTION_POWER_DISCONNECTED:
-                    itemLimit = 5;
+                    itemLimit = 10;
                     queryData();
                     break;
             }
@@ -206,7 +206,10 @@ public class ShoppingActivity extends AppCompatActivity implements SensorEventLi
     }
 
     public void deleteItem(ShoppingItem item) {
-        DocumentReference ref = mItems.document(item._getId());
+        //DocumentReference ref = mItems.document(item._getId());
+        removeUpdateAlertIcon(item);
+
+        /*
         ref.delete()
                 .addOnSuccessListener(success -> {
                     Log.d(LOG_TAG, "Item is successfully deleted: " + item._getId());
@@ -214,6 +217,9 @@ public class ShoppingActivity extends AppCompatActivity implements SensorEventLi
                 .addOnFailureListener(fail -> {
                     Toast.makeText(this, "Item " + item._getId() + " cannot be deleted.", Toast.LENGTH_LONG).show();
                 });
+
+         */
+
 
         queryData();
         mNotificationHandler.cancel();
@@ -309,6 +315,40 @@ public class ShoppingActivity extends AppCompatActivity implements SensorEventLi
                 .addOnFailureListener(fail -> {
                     Toast.makeText(this, "Item " + item._getId() + " cannot be changed.", Toast.LENGTH_LONG).show();
                 });
+
+        mNotificationHandler.send(item.getName());
+        queryData();
+    }
+
+    public void removeUpdateAlertIcon(ShoppingItem item) {
+        //System.out.println(item.getName());
+
+        for (ShoppingItem it : mItemsPurchase) {
+            //System.out.println(it.getName());
+            //System.out.println(item.getName());
+            if (it.getName().equals(item.getName())) {
+                mItemsPurchase.remove(it);
+                cartItems = (cartItems - 1);
+            }
+            break;
+        }
+
+
+        if (0 < cartItems) {
+            countTextView.setText(String.valueOf(cartItems));
+        } else {
+            countTextView.setText("");
+        }
+
+        redCircle.setVisibility((cartItems > 0) ? VISIBLE : GONE);
+
+
+        mItems.document(item._getId()).update("cartedCount", item.getCartedCount() + 1)
+                .addOnFailureListener(fail -> {
+                    Toast.makeText(this, "Item " + item._getId() + " cannot be changed.", Toast.LENGTH_LONG).show();
+                });
+
+
 
         mNotificationHandler.send(item.getName());
         queryData();
