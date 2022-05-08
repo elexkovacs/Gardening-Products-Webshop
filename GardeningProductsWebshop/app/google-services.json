@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "117320716909",
+    "project_id": "gardeningproductswebshop-8f886",
+    "storage_bucket": "gardeningproductswebshop-8f886.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117320716909:android:6365d4fe6b29f29a8a6564",
+        "android_client_info": {
+          "package_name": "com.example.gardeningproductswebshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117320716909-p5q9vt8p69sunl5av2n83nv888sr6t6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gardeningproductswebshop",
+            "certificate_hash": "b169b10ad8bfcc25f3053649e22ada50e6f22022"
+          }
+        },
+        {
+          "client_id": "117320716909-qts05cu52fe22ud4rdt74ie0qjmols0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoT-pTmuijTifGgXj8qM3TM8X5tjJDOGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117320716909-qts05cu52fe22ud4rdt74ie0qjmols0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
