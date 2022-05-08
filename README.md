@@ -43,11 +43,11 @@ Kovács Alex - AUTP2E - elekssz#8884
 &nbsp;&nbsp;&nbsp;&nbsp;Belépés után kapunk egy vásárlásra "ösztönző" értesítést, minden kosárba tett tárgy után értesítést kapunk róla.
 
 ### 15. CRUD műveletek mindegyike megvalósult és műveletek service-(ek)be vannak kiszervezve (AsyncTasks)
-&nbsp;&nbsp;&nbsp;&nbsp;Create -> új felhasználó létrehozása.
-&nbsp;&nbsp;&nbsp;&nbsp;Read -> termékek betöltése.
-&nbsp;&nbsp;&nbsp;&nbsp;Update -> cartedCount növelése.
-&nbsp;&nbsp;&nbsp;&nbsp;Delete -> termék törlése a kosárból.
+&nbsp;&nbsp;&nbsp;&nbsp;Create -> új felhasználó létrehozása.  
+&nbsp;&nbsp;&nbsp;&nbsp;Read -> termékek betöltése.  
+&nbsp;&nbsp;&nbsp;&nbsp;Update -> cartedCount növelése.  
+&nbsp;&nbsp;&nbsp;&nbsp;Delete -> termék törlése a kosárból.  
 &nbsp;&nbsp;&nbsp;&nbsp;Nincs AsyncTask-ba kiszervezve.
 
-### 15.Legalább 2 komplex Firestore lekérdezés megvalósítása, amely indexet igényel (ide tartoznak: where feltétel, rendezés, léptetés, limitálás)
+### 16.Legalább 2 komplex Firestore lekérdezés megvalósítása, amely indexet igényel (ide tartoznak: where feltétel, rendezés, léptetés, limitálás)
 &nbsp;&nbsp;&nbsp;&nbsp;Nincs
