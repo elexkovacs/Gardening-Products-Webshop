@@ -49,5 +49,5 @@ Kovács Alex - AUTP2E - elekssz#8884
 &nbsp;&nbsp;&nbsp;&nbsp;Delete -> termék törlése a kosárból.  
 &nbsp;&nbsp;&nbsp;&nbsp;Nincs AsyncTask-ba kiszervezve.
 
-### 16.Legalább 2 komplex Firestore lekérdezés megvalósítása, amely indexet igényel (ide tartoznak: where feltétel, rendezés, léptetés, limitálás)
+### 16. Legalább 2 komplex Firestore lekérdezés megvalósítása, amely indexet igényel (ide tartoznak: where feltétel, rendezés, léptetés, limitálás)
 &nbsp;&nbsp;&nbsp;&nbsp;Nincs
